@@ -1,1 +1,1 @@
-This is test environment
+This environment is for Interview Candidates
