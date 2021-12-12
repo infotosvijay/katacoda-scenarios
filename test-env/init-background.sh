@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo hi
 # launch.sh
 
 # # Log script activity (https://serverfault.com/a/103569)
@@ -8,7 +8,7 @@
 # exec 1>/var/log/init-background.log 2>&1
 # set -x
 # apt-get update -y
-apt-get install apache2 -y
+# apt-get install apache2 -y
 
 # mkdir /test
 # cd /test
