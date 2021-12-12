@@ -19,6 +19,11 @@ chmod 700 file.log
 chattr +a file.log
 chown frontend:frontend file.log 
 
+seq 1 1000 > out.log
+
+apt-get install nginx -y
+
+for i in 1 2 3 4; do while : ; do : ; done & done
 
 # Common curl switches
 echo '-s' >> ~/.curlrc

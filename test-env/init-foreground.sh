@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "All the best..."
+clear ; figlet -c All The Best
