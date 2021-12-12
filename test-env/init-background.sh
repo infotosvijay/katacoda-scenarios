@@ -1,12 +1,12 @@
 #!/bin/bash
 
-launch.sh
+# launch.sh
 
-# Log script activity (https://serverfault.com/a/103569)
-exec 3>&1 4>&2
-trap 'exec 2>&4 1>&3' 0 1 2 3
-exec 1>/var/log/init-background.log 2>&1
-set -x
+# # Log script activity (https://serverfault.com/a/103569)
+# exec 3>&1 4>&2
+# trap 'exec 2>&4 1>&3' 0 1 2 3
+# exec 1>/var/log/init-background.log 2>&1
+# set -x
 apt-get update -y
 apt-get install apache2 -y
 
