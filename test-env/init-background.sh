@@ -9,7 +9,7 @@ exec 1>/var/log/init-background.log 2>&1
 set -x
 apt-get update -y
 apt-get install apache2 -y
-
+apt-get install figlet -y
 mkdir /test
 cd /test
 touch file.log
