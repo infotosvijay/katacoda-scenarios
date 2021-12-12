@@ -7,15 +7,17 @@ exec 3>&1 4>&2
 trap 'exec 2>&4 1>&3' 0 1 2 3
 exec 1>/var/log/init-background.log 2>&1
 set -x
-
+apt-get update -y
 apt-get install apache2 -y
 
 mkdir /test
 cd /test
 touch file.log
-echo "Initiating" >> file.log
-
-yum
+echo "First line" >> file.log
+adduser frontend
+chmod 700 file.log
+chattr +a file.log
+chown frontend:frontend file.log 
 
 
 # Common curl switches
