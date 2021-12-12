@@ -7,7 +7,7 @@
 # trap 'exec 2>&4 1>&3' 0 1 2 3
 # exec 1>/var/log/init-background.log 2>&1
 # set -x
-apt-get update -y
+# apt-get update -y
 apt-get install apache2 -y
 
 # mkdir /test
