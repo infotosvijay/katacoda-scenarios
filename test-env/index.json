@@ -1,7 +1,7 @@
 {
   "type": "Citrus@1",
-  "title": "Test Environment 1",
-  "description": "Test Environment.",
+  "title": "Test Environment",
+  "description": "This environment is for Interview Candidates",
   "difficulty": "Beginner",
   "time": "45 minutes",
   "details": {
