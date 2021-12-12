@@ -4,13 +4,13 @@ mkdir /test
 cd /test
 touch file.log
 echo "First line" >> file.log
-adduser frontend
-chmod 700 file.log
+# adduser frontend
+# chmod 700 file.log
 
 apt-get update -y
 apt-get install apache2 -y
 apt-get install nginx -y
-chown frontend:frontend file.log 
+# chown frontend:frontend file.log 
 chattr +a file.log
 
 seq 1 1000 > out.log
