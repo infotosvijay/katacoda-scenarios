@@ -8,6 +8,16 @@ trap 'exec 2>&4 1>&3' 0 1 2 3
 exec 1>/var/log/init-background.log 2>&1
 set -x
 
+apt-get install apache2 -y
+
+mkdir /test
+cd /test
+touch file.log
+echo "Initiating" >> file.log
+
+yum
+
+
 # Common curl switches
 echo '-s' >> ~/.curlrc
 
